@@ -11,7 +11,7 @@
     $db_user="root";
     $db_host="localhost";
 
-    $conn =  mysqli_connect($db_host , $db_user , $db_pass , $db_name);
+    $conn =  mysqli_connect($db_host , $db_user , $db_pass , $db_name);//mysqli connection with the database with the variables mentioned
 
     if(!$conn){
         die("Database not connected");

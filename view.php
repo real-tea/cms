@@ -1,5 +1,4 @@
 <?php
-// Include the header template
 include("templates/header.php");
 ?>
 
@@ -20,7 +19,7 @@ include("templates/header.php");
         // Loop through the results and display post details
         while ($data = mysqli_fetch_array($result)) {
         ?>
-        <h1><?php echo $data['title']; ?></h1>
+        <h1><?php echo  $data['title']; ?></h1>
         <p><?php echo $data['date']; ?></p>
         <p><?php echo $data['content']; ?></p>
         <?php
@@ -33,6 +32,5 @@ include("templates/header.php");
 </div>
 
 <?php
-// Include the footer template
 include("templates/footer.php");
 ?>
